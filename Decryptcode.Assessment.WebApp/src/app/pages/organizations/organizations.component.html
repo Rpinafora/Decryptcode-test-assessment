@@ -1,0 +1,35 @@
+<div>
+  <h1 style="margin-bottom: 1rem;">Organizations</h1>
+
+  @if (state().error) {
+    <div class="card error">
+      Error: {{ state().error }}
+    </div>
+  }
+
+  @if (state().loading) {
+    <div class="card loading">
+      Loading…
+    </div>
+  }
+
+  @if (state().data) {
+    @if (state().data!.length > 0) {
+      <div class="grid grid-2">
+        @for (org of state().data!; track org.id) {
+          <a [routerLink]="['/organizations', org.id]"
+             style="color: inherit; text-decoration: none;">
+            <div class="card">
+              <h2>{{ org.name }}</h2>
+              <p>
+                {{ org.industry }}
+                <span [class]="'badge badge--' + org.tier">{{ org.tier }}</span>
+              </p>
+              <p>{{ org.contactEmail }}</p>
+            </div>
+          </a>
+        }
+      </div>
+    }
+  }
+</div>

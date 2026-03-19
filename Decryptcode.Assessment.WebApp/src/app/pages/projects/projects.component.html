@@ -1,0 +1,34 @@
+<div>
+  <h1 style="margin-bottom: 1rem;">Projects</h1>
+
+  @if (state().error) {
+    <div class="card error">
+      Error: {{ state().error }}
+    </div>
+  }
+
+  @if (state().loading) {
+    <div class="card loading">
+      Loading…
+    </div>
+  }
+
+  @if (state().data) {
+    <div class="grid grid-2">
+      @for (proj of state().data; track proj.id) {
+        <a [routerLink]="['/projects', proj.id]"
+           style="color: inherit; text-decoration: none;">
+          <div class="card">
+            <h2>{{ proj.name }}</h2>
+            <p>
+              <span [class]="'badge ' + getStatusBadgeClass()(proj.status)">
+                {{ proj.status }}
+              </span>
+            </p>
+            <p>Budget: {{ proj.budgetHours }}h · {{ proj.startDate || '–' }} to {{ proj.endDate || '–' }}</p>
+          </div>
+        </a>
+      }
+    </div>
+  }
+</div>

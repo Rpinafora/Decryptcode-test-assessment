@@ -1,0 +1,40 @@
+<div>
+  <h1 style="margin-bottom: 1rem;">Dashboard</h1>
+
+  @if (state().error) {
+    <div class="card error">
+      Error: {{ state().error }}
+    </div>
+  }
+
+  @if (state().loading) {
+    <div class="card loading">
+      Loading dashboard…
+    </div>
+  }
+
+  @if (!state().loading && state().data) {
+    <div class="grid grid-3">
+      <div class="card">
+        <h2>Organizations</h2>
+        <p>{{ state().data!.totalOrganizations }}</p>
+      </div>
+      <div class="card">
+        <h2>Users</h2>
+        <p>{{ state().data!.totalUsers }}</p>
+      </div>
+      <div class="card">
+        <h2>Projects</h2>
+        <p>{{ state().data!.totalProjects }} ({{ state().data!.activeProjects }} active)</p>
+      </div>
+      <div class="card">
+        <h2>Time entries</h2>
+        <p>{{ state().data!.totalTimeEntries }}</p>
+      </div>
+      <div class="card">
+        <h2>Total invoiced</h2>
+        <p>${{ state().data!.totalInvoiced.toLocaleString() }}</p>
+      </div>
+    </div>
+  }
+</div>

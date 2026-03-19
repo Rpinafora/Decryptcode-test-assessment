@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11605.296
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decryptcode.Assessment.Service.Api", "src\Decryptcode.Assessment.Service.Api\Decryptcode.Assessment.Service.Api.csproj", "{473EF862-9250-4414-9184-50B0FDD62157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecryptCode.Assessment.Service.ApiMinimal", "src\DecryptCode.Assessment.Service.ApiMinimal\DecryptCode.Assessment.Service.ApiMinimal.csproj", "{34CC6564-063F-E066-EB61-75D37A55313E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decryptcode.Assessment.Service.Application", "src\Decryptcode.Assessment.Service.Application\Decryptcode.Assessment.Service.Application.csproj", "{C4CF7150-9872-9755-D22E-0988E4788E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decryptcode.Assessment.Service.Domain", "src\Decryptcode.Assessment.Service.Domain\Decryptcode.Assessment.Service.Domain.csproj", "{760049A8-0459-EC90-BC0B-29ABA24E6C53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decryptcode.Assessment.Service.Infrastructure.Shared", "src\Decryptcode.Assessment.Service.Infrastructure.Shared\Decryptcode.Assessment.Service.Infrastructure.Shared.csproj", "{17E28194-45CB-DAD6-7079-050594152713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decryptcode.Assessment.Service.Infrastructure.SqlServer", "src\Decryptcode.Assessment.Service.Infrastructure.SqlServer\Decryptcode.Assessment.Service.Infrastructure.SqlServer.csproj", "{D399C281-0BE8-9C6E-3538-2F3FAED20EDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{743D00E0-9D13-4534-BFD3-F2D9E00C7697}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{084F9CD7-0295-43C7-AD06-14D936797EE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decryptcode.Assessment.Service.UnitTests", "tests\Decryptcode.Assessment.Service.UnitTests\Decryptcode.Assessment.Service.UnitTests.csproj", "{9A6A772F-EBC1-6766-BAA7-D964E19C59EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decryptcode.Assessment.Service.IntegrationTests", "tests\Decryptcode.Assessment.Service.IntegrationTests\Decryptcode.Assessment.Service.IntegrationTests.csproj", "{733BFD2E-E658-4F73-C221-B174DD049073}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{473EF862-9250-4414-9184-50B0FDD62157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{473EF862-9250-4414-9184-50B0FDD62157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{473EF862-9250-4414-9184-50B0FDD62157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{473EF862-9250-4414-9184-50B0FDD62157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34CC6564-063F-E066-EB61-75D37A55313E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34CC6564-063F-E066-EB61-75D37A55313E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34CC6564-063F-E066-EB61-75D37A55313E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34CC6564-063F-E066-EB61-75D37A55313E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4CF7150-9872-9755-D22E-0988E4788E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CF7150-9872-9755-D22E-0988E4788E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CF7150-9872-9755-D22E-0988E4788E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CF7150-9872-9755-D22E-0988E4788E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{760049A8-0459-EC90-BC0B-29ABA24E6C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{760049A8-0459-EC90-BC0B-29ABA24E6C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{760049A8-0459-EC90-BC0B-29ABA24E6C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{760049A8-0459-EC90-BC0B-29ABA24E6C53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E28194-45CB-DAD6-7079-050594152713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E28194-45CB-DAD6-7079-050594152713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E28194-45CB-DAD6-7079-050594152713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E28194-45CB-DAD6-7079-050594152713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D399C281-0BE8-9C6E-3538-2F3FAED20EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D399C281-0BE8-9C6E-3538-2F3FAED20EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D399C281-0BE8-9C6E-3538-2F3FAED20EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D399C281-0BE8-9C6E-3538-2F3FAED20EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6A772F-EBC1-6766-BAA7-D964E19C59EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6A772F-EBC1-6766-BAA7-D964E19C59EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6A772F-EBC1-6766-BAA7-D964E19C59EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6A772F-EBC1-6766-BAA7-D964E19C59EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733BFD2E-E658-4F73-C221-B174DD049073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733BFD2E-E658-4F73-C221-B174DD049073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733BFD2E-E658-4F73-C221-B174DD049073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733BFD2E-E658-4F73-C221-B174DD049073}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{473EF862-9250-4414-9184-50B0FDD62157} = {743D00E0-9D13-4534-BFD3-F2D9E00C7697}
+		{34CC6564-063F-E066-EB61-75D37A55313E} = {743D00E0-9D13-4534-BFD3-F2D9E00C7697}
+		{C4CF7150-9872-9755-D22E-0988E4788E01} = {743D00E0-9D13-4534-BFD3-F2D9E00C7697}
+		{760049A8-0459-EC90-BC0B-29ABA24E6C53} = {743D00E0-9D13-4534-BFD3-F2D9E00C7697}
+		{17E28194-45CB-DAD6-7079-050594152713} = {743D00E0-9D13-4534-BFD3-F2D9E00C7697}
+		{D399C281-0BE8-9C6E-3538-2F3FAED20EDF} = {743D00E0-9D13-4534-BFD3-F2D9E00C7697}
+		{9A6A772F-EBC1-6766-BAA7-D964E19C59EF} = {084F9CD7-0295-43C7-AD06-14D936797EE9}
+		{733BFD2E-E658-4F73-C221-B174DD049073} = {084F9CD7-0295-43C7-AD06-14D936797EE9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {803F85D6-71D7-4ECC-A9E4-D858CF6A40EF}
+	EndGlobalSection
+EndGlobal
