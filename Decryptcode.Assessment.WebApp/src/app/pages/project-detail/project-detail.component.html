@@ -1,0 +1,25 @@
+@if (state().data) {
+  <div>
+    <p><a routerLink="/projects">← Projects</a></p>
+    <h1 style="margin-bottom: 1rem;">{{ state().data!.name }}</h1>
+    <div class="card">
+      <p><strong>Status:</strong> {{ state().data!.status }}</p>
+      <p><strong>Budget:</strong> {{ state().data!.budgetHours }} hours</p>
+      <p><strong>Hours logged:</strong> {{ state().data!.totalHoursLogged ?? 0 }}</p>
+      <p><strong>Organization:</strong> {{ state().data!.organization?.name }}</p>
+      <p><strong>Dates:</strong> {{ state().data!.startDate || '–' }} to {{ state().data!.endDate || '–' }}</p>
+    </div>
+  </div>
+}
+
+@if (state().error) {
+  <div class="card error">
+    Error: {{ state().error }}
+  </div>
+}
+
+@if (state().loading) {
+  <div class="card loading">
+    Loading…
+  </div>
+}

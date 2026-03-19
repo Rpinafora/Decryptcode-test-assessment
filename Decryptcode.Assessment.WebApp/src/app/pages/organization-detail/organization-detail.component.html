@@ -1,0 +1,42 @@
+@if (state().data) {
+  <div>
+    <p><a routerLink="/organizations">← Organizations</a></p>
+    <h1 style="margin-bottom: 1rem;">{{ state().data!.organization.name }}</h1>
+    <div class="card">
+      <p><strong>Industry:</strong> {{ state().data!.organization.industry }}</p>
+      <p>
+        <strong>Tier:</strong>
+        <span [class]="'badge badge--' + state().data!.organization.tier">
+          {{ state().data!.organization.tier }}
+        </span>
+      </p>
+      <p><strong>Contact:</strong> {{ state().data!.organization.contactEmail }}</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h2>Projects</h2>
+        <p>{{ state().data!.projectCount }}</p>
+      </div>
+      <div class="card">
+        <h2>Users</h2>
+        <p>{{ state().data!.userCount }}</p>
+      </div>
+      <div class="card">
+        <h2>Total invoiced</h2>
+        <p>{{ state().data!.currency }} {{ state().data!.totalInvoiced.toLocaleString() }}</p>
+      </div>
+    </div>
+  </div>
+}
+
+@if (state().error) {
+  <div class="card error">
+    Error: {{ state().error }}
+  </div>
+}
+
+@if (state().loading) {
+  <div class="card loading">
+    Loading…
+  </div>
+}
